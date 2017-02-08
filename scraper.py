@@ -24,7 +24,7 @@ def scrapeyear(url, year):
         print data      
         #scraperwiki.datastore.save(["name", "date"], data, verbose=1)    
 
-for year in range(1921, 2017):
+for year in range(1921, 2016):
     scrapeyear('http://falkadb.forseti.is/orduskra/fal03.php?rod=nafn&valid_ar=' + str(year), str(year))
 
 
